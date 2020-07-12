@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello
+  name: hello-qa
   namespace: anand-manifest
   labels:
-    app: hello
+    app: hello-qa
 spec:
   selector:
     matchLabels:
-      app: hello
+      app: hello-qa
   template:
     metadata:
       labels:
-        app: hello
+        app: hello-qa
     spec:
       containers:
       - name: hello
